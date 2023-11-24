@@ -3,7 +3,7 @@ import { useSettingsStore } from '@mqttx/ui'
 import { ElementI18nMap } from '@mqttx/ui'
 
 const settingsStore = useSettingsStore()
-console.log('MQTTX Web App init...')
+console.log('MQTTX App init...')
 </script>
 
 <template>

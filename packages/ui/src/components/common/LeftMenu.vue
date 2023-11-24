@@ -34,7 +34,7 @@ const helpMenus = reactive({
   },
   about: {
     icon: 'icon-about',
-    path: '/connections',
+    path: '/about',
   },
 })
 </script>

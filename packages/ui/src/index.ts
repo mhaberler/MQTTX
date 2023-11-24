@@ -11,6 +11,7 @@ import EmptyView from './components/common/EmptyView.vue'
 import LeftMenu from './components/common/LeftMenu.vue'
 import MainView from './components/common/MainView.vue'
 import SplitView from './components/common/SplitView.vue'
+import AboutView from './components/about/AboutView.vue'
 
 export const pinia = createPinia()
 
@@ -18,7 +19,7 @@ export * from './router'
 export * from './stores'
 export * from './i18n'
 
-export { ConnectionListView, ConnectionDetailsView, EmptyView, LeftMenu, MainView, SplitView }
+export { ConnectionListView, ConnectionDetailsView, EmptyView, LeftMenu, MainView, SplitView, AboutView }
 
 export default {
   install: (app: App) => {
@@ -28,5 +29,6 @@ export default {
     app.component('LeftMenu', LeftMenu)
     app.component('MainView', MainView)
     app.component('SplitView', SplitView)
+    app.component('AboutView', AboutView)
   },
 }

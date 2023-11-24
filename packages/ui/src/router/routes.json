@@ -15,5 +15,10 @@
         "props": true
       }
     ]
+  },
+  {
+    "path": "/about",
+    "name": "about",
+    "component": "AboutComponent"
   }
 ]
