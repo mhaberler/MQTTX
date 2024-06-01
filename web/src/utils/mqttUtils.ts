@@ -153,7 +153,7 @@ export const getDefaultRecord = (): ConnectionModel => {
     clientId: getClientId(),
     createAt: time.getNowDate(),
     updateAt: time.getNowDate(),
-    name: '',
+    name: 'Sensorbox',
     clean: true,
     protocol: 'ws',
     host: process.env.VUE_APP_DEFAULT_HOST ?? 'broker.emqx.io',
