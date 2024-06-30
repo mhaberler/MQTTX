@@ -4,6 +4,7 @@ const zlib = require('zlib')
 process.env.VUE_APP_VERSION = require('./package.json').version
 
 module.exports = {
+
   pluginOptions: {
     // https://github.com/webpack-contrib/compression-webpack-plugin/tree/v6.1.1
     compression: {
@@ -30,6 +31,11 @@ module.exports = {
   publicPath: process.env.BASE_URL,
   outputDir: process.env.VUE_APP_OUTPUT_DIR,
   configureWebpack: {
+    // https://stackoverflow.com/questions/55042331/vue-cli-code-splitting-creates-a-file-with-very-long-name-that-cant-be-served
+    output: {
+      filename: '[name].[hash:8].js',
+      chunkFilename: `js/[id].[hash:8].js`
+    },
     plugins: [
       new MonacoWebpackPlugin({
         output: 'static/',
