@@ -34,7 +34,7 @@ module.exports = {
     // https://stackoverflow.com/questions/55042331/vue-cli-code-splitting-creates-a-file-with-very-long-name-that-cant-be-served
     output: {
       filename: '[name].[hash:8].js',
-      chunkFilename: `js/[id].[hash:8].js`
+      chunkFilename: `js/[contenthash:8].js`
     },
     plugins: [
       new MonacoWebpackPlugin({
